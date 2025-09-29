@@ -1,0 +1,41 @@
+{
+	"name": "MCTR703_DOE_2025",
+	// "image": "mcr.microsoft.com/devcontainers/base:noble",
+  	"dockerFile": "Dockerfile",
+	"features": {
+		// "ghcr.io/devcontainers/features/desktop-lite:1": {
+		// 	"webPort": "6080",
+        // 	"vncPort": "5901"
+		// },
+		"ghcr.io/devcontainers/features/python:1": {
+			"installTools": true,
+			"installJupyterlab": true,
+			"version": "latest"
+		}
+	},
+	"runArgs": [
+		"--privileged"//,"--network=host"
+	],
+	"workspaceFolder": "/home/vscode/${localWorkspaceFolderBasename}",
+	"workspaceMount": "source=${localWorkspaceFolder}/Exercises,target=/home/vscode/${localWorkspaceFolderBasename}/Exercises,type=bind",
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
+	],
+	// "forwardPorts": [6080, 5901],
+	// "portsAttributes": {
+	// 	"6080": {"label": "Desktop (Web)"},
+	// 	"5901": {"label": "Desktop (VNC)"}
+	// },
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.defaultInterpreterPath": "/opt/venv/bin/python"
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"ritwickdey.liveserver"
+			]
+		}
+	}
+}
