@@ -1,11 +1,10 @@
 # MCTR703_AM - Design of Experiments 2025
 The official repo for the MCTR703 module.
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 1rem 5rem; width: 100%; max-width: 800px; margin: 0 auto; flex-wrap: wrap;">
-    <img src="https://www.marefa.org/w/images/thumb/7/7d/Logo_Polytech_Annecy_Chambery.svg/800px-Logo_Polytech_Annecy_Chambery.svg.png" alt="Logo 1" style="height: 100em; max-height: 5rem; object-fit: contain;">
-    <img src="https://www.univ-smb.fr/wp-content/themes/usmb/assets/img/logo.svg" alt="Logo 2" style="height: 100em; max-height: 5rem; object-fit: contain;">
-</div>
-</br>
+<p float="left" style="display:flex;justify-content:space-between;padding:0 5em 0 5em">
+    <img src="https://www.marefa.org/w/images/thumb/7/7d/Logo_Polytech_Annecy_Chambery.svg/800px-Logo_Polytech_Annecy_Chambery.svg.png" alt="Logo 1" height="100em">
+    <img src="https://www.univ-smb.fr/wp-content/themes/usmb/assets/img/logo.svg" alt="Logo 2" height="100em">
+</p>
 
 <p style="text-align:center"> ⚠ This code must be run on a Dev Container ⚠ </p>
 
