@@ -1,0 +1,5 @@
+{
+  "jupyter.kernelPickerType": "OnlyShowRecommended",
+  "jupyter.notebook.kernelProvider": "Python",
+  "python.defaultInterpreterPath": "/opt/conda/bin/python"
+}

@@ -1,7 +1,6 @@
 {
 	"name": "MCTR703_DOE_2025",
-	// "image": "mcr.microsoft.com/devcontainers/base:noble",
-  	"dockerFile": "Dockerfile",
+	"dockerFile": "Dockerfile",
 	"features": {
 		// "ghcr.io/devcontainers/features/desktop-lite:1": {
 		// 	"webPort": "6080",
@@ -16,10 +15,12 @@
 	"runArgs": [
 		"--privileged"//,"--network=host"
 	],
-	"workspaceFolder": "/home/vscode/${localWorkspaceFolderBasename}",
-	"workspaceMount": "source=${localWorkspaceFolder}/Exercises,target=/home/vscode/${localWorkspaceFolderBasename}/Exercises,type=bind",
+	"workspaceFolder": "/home/jovyan/${localWorkspaceFolderBasename}",
+	"workspaceMount": "source=${localWorkspaceFolder}/Exercises,target=/home/jovyan/${localWorkspaceFolderBasename}/Exercises,type=bind"
+	,
 	"mounts": [
-		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
+		"source=${localWorkspaceFolder}/.vscode,target=/home/jovyan/${localWorkspaceFolderBasename}/.vscode,type=bind",
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/jovyan/.bash_history,type=bind"
 	],
 	// "forwardPorts": [6080, 5901],
 	// "portsAttributes": {
