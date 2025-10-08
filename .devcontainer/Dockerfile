@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/scipy-notebook:latest
+FROM quay.io/jupyter/scipy-notebook:ubuntu-22.04
 
 USER root
 # Generally, Dev Container Features assume that the non-root user (in this case jovyan)
